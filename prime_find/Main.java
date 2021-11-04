@@ -30,12 +30,12 @@ public class Main{
 
 	private static int inc(String numbers, String val) {//"1000"
 		char []chan = new char[val.length()];
-		for (int i = 0; i < val.length() ; i++){	//'1''0''0''0';
+		for (int i = 0; i < val.length() ; i++){	//71
 			chan[i] = val.charAt(i);
 		}
 		for (int i = 0 ; i < numbers.length(); i++){
 			for (int j = 0 ; j < val.length() ; j++){
-				if (numbers.charAt(i) == chan[j])
+				if (numbers.charAt(i) == chan[j])		//1 7                oo
 				{
 					chan[j] = 'o';
 					break;								
